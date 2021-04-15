@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground">
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btAvata"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="26dp"-->
+<!--        android:background="@color/ground"-->
+<!--        android:src="@drawable/bitmap_copy_2"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/guideline2"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline2" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ImgLogo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/ground"-->
+<!--        android:src="@drawable/group"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/guideline2"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/guidelineCenter"-->
+<!--        app:layout_constraintRight_toRightOf="@id/guidelineCenter"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline2" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btSetting"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:background="@color/ground"-->
+<!--        android:src="@drawable/ic_sharp_settings_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/guideline2"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline2" />-->
+
+<!--    <ScrollView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ImgLogo">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="17.9dp"-->
+<!--            android:background="@drawable/card">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="22dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:src="@drawable/bitmap_copy_3" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/bitmap_copy_4" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/cicle"-->
+<!--        android:src="@drawable/ic_baseline_assignment_returned_24"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/parth4"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/parth4" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/parth4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/path_4"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textEnviar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="Enviar"-->
+<!--        android:textColor="#999999"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="normal"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/parth4"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textRecibir"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="Recibir"-->
+<!--        android:textColor="#999999"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="normal"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/parth4"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/textEnviar"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/textPrefil" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textPrefil"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="Perfil"-->
+<!--        android:textColor="#999999"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="normal"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/parth4"-->
+<!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/ground"-->
+<!--        android:src="@drawable/ic_baseline_account_box_24"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/textPrefil"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/textPrefil"-->
+<!--        app:layout_constraintRight_toRightOf="@id/textPrefil" />-->
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/ground"-->
+<!--        android:src="@drawable/ic_baseline_unarchive_24"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/textEnviar"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/textEnviar"-->
+<!--        app:layout_constraintRight_toRightOf="@id/textEnviar" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_begin="37dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guidelineCenter"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.5" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

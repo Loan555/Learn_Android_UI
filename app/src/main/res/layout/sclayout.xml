@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintTop_toBottomOf="@id/ImgLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/card">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/avatarCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="26dp"
+                    app:cardCornerRadius="35dp">
+
+                    <ImageButton
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@mipmap/ic_launcher" />
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/btCard"
+                    android:layout_width="52dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/btcard_2"
+                    android:padding="0dp"
+                    android:text="HOY"
+                    android:textColor="#3a2424"
+                    android:textSize="10sp"
+
+                    app:backgroundTint="#fff0b4" />
+
+                <TextView
+                    android:id="@+id/tite1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/avatarCard"
+                    android:layout_marginLeft="28dp"
+                    android:text="Nina te ha enviado "
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite1"
+                    android:layout_marginLeft="28dp"
+                    android:text="20,00€"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/btVerDetalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="23dp"
+                    android:background="@drawable/button1"
+                    android:backgroundTint="@color/bt"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="8dp"
+                    android:text="VER DETALLES"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/white"
+                    app:backgroundTintMode="multiply" />
+
+
+                <TextView
+                    android:id="@+id/tite2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite3"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_toRightOf="@id/btVerDetalles"
+                    android:text="Por la cena... 🍕"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tite3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
+                    android:layout_marginLeft="31dp"
+                    android:layout_toRightOf="@id/btVerDetalles"
+                    android:text="Mensaje"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Enviar de nuevo"
+                android:textColor="#003087"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bitmap_copy_4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bitmap_copy_3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bitmap_copy_5" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bitmap_copy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:shadowColor="#80000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text="Carlos Roca"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:shadowColor="#80000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text="Ruby Sanz"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:shadowColor="#80000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text="Mary Rich"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:shadowColor="#80000000"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text="José Porto"
+                    android:textColor="#666666"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="17dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Actividad"
+                    android:textColor="#003087"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Ver más movimientos"
+                    android:textColor="#025ed7"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_price">
+
+                <TextView
+                    android:id="@+id/row1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="El corte inglés"
+                    android:textColor="#1b1b1b"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1_1"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Pago aceptado"
+                    android:textColor="#999999"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="-50€"
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/row1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/row1_3"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/row2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row1_4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Maria Lujan"
+                    android:textColor="#1b1b1b"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row2_1"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Pago aceptado"
+                    android:textColor="#999999"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row1_4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="650€"
+                    android:textColor="#00c55b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+
+                <View
+                    android:id="@+id/row2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/row2_3"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/row3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row2_4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Maria Lujan"
+                    android:textColor="#1b1b1b"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row3_1"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginBottom="19dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Pago aceptado"
+                    android:textColor="#999999"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/row3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row2_4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="250€"
+                    android:textColor="#00c55b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btAvata"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        app:cardBackgroundColor="@color/ground"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/bitmap_copy_2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/light"
+        app:layout_constraintBottom_toTopOf="@+id/btAvata"
+        app:layout_constraintStart_toEndOf="@+id/btAvata" />
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ground"
+        android:src="@drawable/group"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineCenter"
+        app:layout_constraintRight_toRightOf="@id/guidelineCenter"
+        app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <ImageButton
+        android:id="@+id/btSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:background="@color/ground"
+        android:src="@drawable/ic_sharp_settings_24"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cicle"
+        android:src="@drawable/ic_baseline_assignment_returned_24"
+        app:layout_constraintBottom_toTopOf="@id/parth4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/parth4" />
+
+    <ImageView
+        android:id="@+id/parth4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/path_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Enviar"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/parth4"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textRecibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Recibir"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/parth4"
+        app:layout_constraintLeft_toRightOf="@id/textEnviar"
+        app:layout_constraintRight_toLeftOf="@id/textPrefil" />
+
+    <TextView
+        android:id="@+id/textPrefil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Perfil"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/parth4"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ground"
+        android:src="@drawable/shape"
+        app:layout_constraintBottom_toTopOf="@id/textPrefil"
+        app:layout_constraintLeft_toLeftOf="@id/textPrefil"
+        app:layout_constraintRight_toRightOf="@id/textPrefil" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ground"
+        android:src="@drawable/assignment_returned_black_18_dp"
+        app:layout_constraintBottom_toTopOf="@id/textEnviar"
+        app:layout_constraintLeft_toLeftOf="@id/textEnviar"
+        app:layout_constraintRight_toRightOf="@id/textEnviar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="37dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
