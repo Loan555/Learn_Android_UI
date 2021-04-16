@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ground"
+    android:orientation="vertical"
+    android:padding="17dp"
+    android:weightSum="4">
+
+    <ImageButton
+        android:id="@+id/btBackspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bt"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineTop"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:padding="2dp"
+        android:text="Revisar y enviar "
+        android:textColor="#1b1b1b"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineTop"
+        app:layout_constraintLeft_toRightOf="@id/btBackspace" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        tools:layout_editor_absoluteX="17dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:id="@+id/card_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/list_price"
+                android:padding="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/card_2_2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="17dp">
+
+                <ImageView
+                    android:id="@+id/avatarCard2"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/bitmap_copy_5" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/bt"
+                    android:src="@drawable/ic_baseline_pen_24" />
+
+                <TextView
+                    android:id="@+id/tite_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/avatarCard2"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="David Paz "
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tite_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite_1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="davidpaz@correo.com "
+                    android:textColor="#999999"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tite_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite_2"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Mensaje"
+                    android:textColor="#1b1b1b"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tite_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite_4"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Este es el dinero de la entradas… 🎬"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/avatarCard2"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bt_2_1"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="multiply"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="20,00€"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:backgroundTint="#FFFFFF"
+                    app:backgroundTintMode="multiply"
+                    app:iconTint="#FFFFFF" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_price"
+                android:paddingLeft="19dp"
+                android:paddingTop="16dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="36dp"
+                app:layout_constraintBottom_toTopOf="@id/button"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:layout_marginBottom="22dp"
+                    android:id="@+id/row1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Tipo de pago "
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/row1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/arrow_right"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Personal "
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/bt"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/row1_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/row1_3"
+                    android:background="@drawable/line" />
+
+                <ImageView
+                    android:id="@+id/icon_bba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row1_5"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/bt"
+                    android:src="@drawable/icon_bbva" />
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/icon_bba"
+                    android:id="@+id/row1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/row1_5"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="BBVA"
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_below="@+id/row1_6"
+                    android:id="@+id/row1_7"
+                    android:layout_toRightOf="@id/icon_bba"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:text="****9889"
+                    />
+
+                <ImageButton
+                    android:layout_below="@id/row1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bt"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:layout_alignParentRight="true"/>
+
+
+                <View
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/row1_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/row1_7"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#1b1b1b"
+                    tools:text="Tarifas por transacción "
+                    android:id="@+id/row2_1"
+                    android:layout_below="@id/row1_4"
+                    android:layout_alignParentLeft="true"
+                    android:text="Maria Lujan"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="#666666"
+                    android:gravity="end"
+                    tools:text="0,00€ "
+                    android:id="@+id/row2_3"
+                    android:layout_below="@id/row1_4"
+                    android:layout_alignParentRight="true"
+                    android:text="650€"/>
+
+
+                <View
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/row2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/row2_1"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="#1b1b1b"
+                    android:text="Tú pagas"
+                    android:id="@+id/row3_1"
+                    android:layout_below="@id/row2_4"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:textColor="#00d090"
+                    android:gravity="end"
+                    android:text="20,00€ "
+                    android:id="@+id/row3_3"
+                    android:layout_below="@id/row2_4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/bt_2_2"
+                android:letterSpacing="0.06"
+                android:text="ENVIAR AHORA"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:backgroundTintMode="multiply"
+                app:layout_constraintTop_toBottomOf="@id/card_2_2"
+                tools:layout_editor_absoluteX="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
