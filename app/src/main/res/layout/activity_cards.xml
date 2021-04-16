@@ -133,9 +133,9 @@
 
 
                 <RelativeLayout
-                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
 
                     <ImageButton
                         android:id="@+id/bt_create"
@@ -146,10 +146,10 @@
 
                     <ImageButton
 
-                        android:layout_toRightOf="@id/bt_create"
+                        android:id="@+id/bt_delete"
                         android:layout_width="37dp"
                         android:layout_height="71dp"
-                        android:id="@+id/bt_delete"
+                        android:layout_toRightOf="@id/bt_create"
                         android:background="#025ed7"
                         android:src="@drawable/delete_outline_black_18_dp" />
 
@@ -164,124 +164,123 @@
                 </RelativeLayout>
 
 
+            </RelativeLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/row_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/row_1"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/list_price"
-            android:padding="17dp"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="501dp">
-
-            <ImageView
-                android:id="@+id/img_visa"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/row_2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingRight="34dp"
-                android:src="@drawable/img_visa" />
+                android:layout_below="@id/row_1"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/list_price"
+                android:padding="17dp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="501dp">
 
-            <TextView
-                android:id="@+id/tite_2_2"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/img_visa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="34dp"
+                    android:src="@drawable/img_visa" />
+
+                <TextView
+                    android:id="@+id/tite_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_visa"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Mastercard"
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/bt"
+                    android:src="@drawable/more_vert_black_18_dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite_2_2"
+                    android:layout_toRightOf="@id/img_visa"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="****9889"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/row_3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img_visa"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Mastercard"
-                android:textColor="#1b1b1b"
-                android:textSize="16sp"
-                android:textStyle="normal" />
+                android:layout_below="@id/row_2"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/list_price"
+                android:padding="17dp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="576dp">
+
+                <ImageView
+                    android:id="@+id/img_visa_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="34dp"
+                    android:src="@drawable/img_visa" />
+
+                <TextView
+                    android:id="@+id/tite_3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_visa_copy"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Mastercard"
+                    android:textColor="#1b1b1b"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/bt"
+                    android:src="@drawable/more_vert_black_18_dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tite_3_2"
+                    android:layout_toRightOf="@id/img_visa_copy"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="****9889"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/row_3"
                 android:layout_alignParentRight="true"
-                android:layout_margin="5dp"
-                android:background="@color/bt"
-                android:src="@drawable/more_vert_black_18_dp" />
+                android:background="@drawable/cicle"
+                android:src="@drawable/add_black_18_dp"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="566dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tite_2_2"
-                android:layout_toRightOf="@id/img_visa"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="****9889"
-                android:textColor="#999999"
-                android:textSize="14sp"
-                android:textStyle="normal" />
         </RelativeLayout>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <RelativeLayout
-            android:id="@+id/row_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/row_2"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/list_price"
-            android:padding="17dp"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="576dp">
-
-            <ImageView
-                android:id="@+id/img_visa_copy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="34dp"
-                android:src="@drawable/img_visa" />
-
-            <TextView
-                android:id="@+id/tite_3_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img_visa_copy"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="Mastercard"
-                android:textColor="#1b1b1b"
-                android:textSize="16sp"
-                android:textStyle="normal" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_margin="5dp"
-                android:background="@color/bt"
-                android:src="@drawable/more_vert_black_18_dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tite_3_2"
-                android:layout_toRightOf="@id/img_visa_copy"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="****9889"
-                android:textColor="#999999"
-                android:textSize="14sp"
-                android:textStyle="normal" />
-        </RelativeLayout>
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/row_3"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/cicle"
-            android:src="@drawable/add_black_18_dp"
-            tools:layout_editor_absoluteX="327dp"
-            tools:layout_editor_absoluteY="566dp" />
-
-    </RelativeLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
+</ScrollView>
 
     <!--<androidx.constraintlayout.widget.ConstraintLayout-->
     <!--    android:layout_width="match_parent"-->

@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.dashboard)
 
         bt_home.setOnClickListener {
-            startActivity(Intent(this@MainActivity,SecondActivity::class.java))
+            startActivity(Intent(this@MainActivity, SecondActivity::class.java))
         }
     }
 

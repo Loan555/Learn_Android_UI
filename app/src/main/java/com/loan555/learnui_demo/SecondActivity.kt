@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.pay.*
 
-class SecondActivity: AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pay)
 
         button.setOnClickListener {
-            val intent: Intent = Intent(this@SecondActivity,ThreeActivity::class.java)
+            val intent: Intent = Intent(this@SecondActivity, ThreeActivity::class.java)
             startActivity(intent)
         }
     }

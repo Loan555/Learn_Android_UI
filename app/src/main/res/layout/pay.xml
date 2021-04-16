@@ -157,11 +157,11 @@
                 tools:layout_editor_absoluteX="0dp">
 
                 <TextView
-                    android:layout_marginBottom="22dp"
                     android:id="@+id/row1_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="22dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="Tipo de pago "
                     android:textColor="#1b1b1b"
@@ -170,10 +170,10 @@
 
 
                 <TextView
-                    android:layout_marginBottom="24dp"
                     android:id="@+id/row1_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
                     android:layout_toLeftOf="@+id/arrow_right"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="Personal "
@@ -190,11 +190,11 @@
                     android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
                 <View
-                    android:layout_marginBottom="24dp"
                     android:id="@+id/row1_5"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_below="@id/row1_3"
+                    android:layout_marginBottom="24dp"
                     android:background="@drawable/line" />
 
                 <ImageView
@@ -207,12 +207,12 @@
                     android:src="@drawable/icon_bbva" />
 
                 <TextView
-                    android:layout_marginLeft="16dp"
-                    android:layout_toRightOf="@id/icon_bba"
                     android:id="@+id/row1_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/row1_5"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/icon_bba"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="BBVA"
                     android:textColor="#1b1b1b"
@@ -220,99 +220,98 @@
                     android:textStyle="normal" />
 
                 <TextView
-                    android:layout_below="@+id/row1_6"
                     android:id="@+id/row1_7"
-                    android:layout_toRightOf="@id/icon_bba"
-                    android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1_6"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/icon_bba"
                     android:fontFamily="@font/montserrat_medium"
-                    android:textStyle="normal"
-                    android:textSize="14sp"
-                    android:textColor="#999999"
                     android:text="****9889"
-                    />
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
 
                 <ImageButton
-                    android:layout_below="@id/row1_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/row1_5"
+                    android:layout_alignParentRight="true"
                     android:background="@color/bt"
-                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                    android:layout_alignParentRight="true"/>
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
 
                 <View
-                    android:layout_marginBottom="24dp"
                     android:id="@+id/row1_4"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_below="@id/row1_7"
+                    android:layout_marginBottom="24dp"
                     android:background="@drawable/line" />
 
                 <TextView
-                    android:layout_marginBottom="24dp"
+                    android:id="@+id/row2_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:textStyle="normal"
-                    android:textSize="14sp"
-                    android:textColor="#1b1b1b"
-                    tools:text="Tarifas por transacción "
-                    android:id="@+id/row2_1"
                     android:layout_below="@id/row1_4"
                     android:layout_alignParentLeft="true"
-                    android:text="Maria Lujan"/>
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Maria Lujan"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:text="Tarifas por transacción " />
 
 
                 <TextView
+                    android:id="@+id/row2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:textStyle="normal"
-                    android:textSize="16sp"
-                    android:textColor="#666666"
-                    android:gravity="end"
-                    tools:text="0,00€ "
-                    android:id="@+id/row2_3"
                     android:layout_below="@id/row1_4"
                     android:layout_alignParentRight="true"
-                    android:text="650€"/>
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="end"
+                    android:text="650€"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    tools:text="0,00€ " />
 
 
                 <View
-                    android:layout_marginBottom="24dp"
                     android:id="@+id/row2_4"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:layout_below="@id/row2_1"
+                    android:layout_marginBottom="24dp"
                     android:background="@drawable/line" />
 
                 <TextView
+                    android:id="@+id/row3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:textStyle="normal"
-                    android:textSize="14sp"
-                    android:textColor="#1b1b1b"
-                    android:text="Tú pagas"
-                    android:id="@+id/row3_1"
                     android:layout_below="@id/row2_4"
-                    android:layout_alignParentLeft="true"/>
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Tú pagas"
+                    android:textColor="#1b1b1b"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
 
                 <TextView
+                    android:id="@+id/row3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_semibold"
-                    android:textStyle="normal"
-                    android:textSize="20sp"
-                    android:textColor="#00d090"
-                    android:gravity="end"
-                    android:text="20,00€ "
-                    android:id="@+id/row3_3"
                     android:layout_below="@id/row2_4"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="end"
+                    android:text="20,00€ "
+                    android:textColor="#00d090"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
 
             </RelativeLayout>
 
