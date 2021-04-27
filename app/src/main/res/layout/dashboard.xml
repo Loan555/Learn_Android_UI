@@ -31,15 +31,15 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/avatarCard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
                     android:layout_marginLeft="28dp"
                     android:layout_marginTop="26dp"
-                    app:cardCornerRadius="35dp">
+                    app:cardCornerRadius="28dp">
 
                     <ImageButton
-                        android:layout_width="56dp"
-                        android:layout_height="56dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:src="@mipmap/ic_launcher" />
                 </androidx.cardview.widget.CardView>
 
@@ -263,7 +263,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/list_price">
+                android:background="@drawable/background_list">
 
                 <TextView
                     android:id="@+id/row1_1"

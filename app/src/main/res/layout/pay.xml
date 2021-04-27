@@ -56,14 +56,13 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toTopOf="parent">
 
-
             <RelativeLayout
                 android:id="@+id/card_2_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="42dp"
                 android:layout_weight="1"
-                android:background="@drawable/list_price"
+                android:background="@drawable/background_list"
                 android:padding="20dp"
                 app:layout_constraintBottom_toTopOf="@+id/card_2_2"
                 app:layout_constraintTop_toTopOf="parent"
@@ -151,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="76dp"
-                android:background="@drawable/list_price"
+                android:background="@drawable/background_list"
                 android:paddingLeft="19dp"
                 android:paddingTop="16dp"
                 android:paddingRight="20dp"
