@@ -41,10 +41,12 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
-        tools:layout_editor_absoluteX="17dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/body"
@@ -148,6 +150,7 @@
                 android:id="@+id/card_2_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="76dp"
                 android:background="@drawable/list_price"
                 android:paddingLeft="19dp"
                 android:paddingTop="16dp"
@@ -240,13 +243,13 @@
                     android:background="@color/bt"
                     android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
-
                 <View
                     android:id="@+id/row1_4"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="18dp"
                     android:layout_below="@id/row1_7"
-                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="22dp"
                     android:background="@drawable/line" />
 
                 <TextView
@@ -305,7 +308,6 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/row2_4"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"
                     android:fontFamily="@font/montserrat_semibold"
                     android:gravity="end"
                     android:text="20,00€ "
@@ -328,6 +330,8 @@
                 android:textStyle="bold"
                 app:backgroundTint="#FFFFFF"
                 app:backgroundTintMode="multiply"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_2_2"
                 tools:layout_editor_absoluteX="0dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>

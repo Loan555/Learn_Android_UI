@@ -131,36 +131,33 @@
                     android:textSize="14sp"
                     android:textStyle="normal" />
 
-
                 <RelativeLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="113dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentRight="true">
+
+                    <ImageButton
+                        android:id="@+id/bt_close"
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:background="@drawable/bt_close"
+                        android:paddingLeft="80dp"
+                        android:src="@drawable/ic_baseline_close_24" />
+
+                    <ImageButton
+                        android:id="@+id/bt_delete"
+                        android:layout_width="74dp"
+                        android:layout_height="71dp"
+                        android:background="@drawable/bt_delete"
+                        android:paddingLeft="40dp"
+                        android:src="@drawable/delete_outline_black_18_dp" />
 
                     <ImageButton
                         android:id="@+id/bt_create"
                         android:layout_width="37dp"
                         android:layout_height="71dp"
-                        android:background="#003087"
+                        android:background="@drawable/bt_create"
                         android:src="@drawable/create_black_18_dp_2" />
-
-                    <ImageButton
-
-                        android:id="@+id/bt_delete"
-                        android:layout_width="37dp"
-                        android:layout_height="71dp"
-                        android:layout_toRightOf="@id/bt_create"
-                        android:background="#025ed7"
-                        android:src="@drawable/delete_outline_black_18_dp" />
-
-                    <ImageButton
-
-                        android:id="@+id/bt_close"
-                        android:layout_width="37dp"
-                        android:layout_height="71dp"
-                        android:layout_toRightOf="@+id/bt_delete"
-                        android:background="#006eff"
-                        android:src="@drawable/ic_baseline_close_24" />
                 </RelativeLayout>
 
 

@@ -7,10 +7,15 @@
     android:background="@color/ground">
 
     <ScrollView
+        android:layout_marginBottom="126dp"
+        android:layout_marginTop="78dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ImgLogo">
 
         <LinearLayout
@@ -20,9 +25,9 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/card">
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:paddingBottom="23dp">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/avatarCard"
@@ -39,7 +44,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <Button
+                <TextView
                     android:id="@+id/btCard"
                     android:layout_width="52dp"
                     android:layout_height="22dp"
@@ -47,6 +52,8 @@
                     android:layout_marginTop="23dp"
                     android:layout_marginRight="14dp"
                     android:background="@drawable/btcard_2"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
                     android:padding="0dp"
                     android:text="HOY"
                     android:textColor="#3a2424"
@@ -60,6 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/avatarCard"
                     android:layout_marginLeft="28dp"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="Nina te ha enviado "
                     android:textColor="@color/white"
                     android:textSize="14sp" />
@@ -70,53 +78,53 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tite1"
                     android:layout_marginLeft="28dp"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="20,00€"
                     android:textColor="@color/white"
                     android:textSize="28sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/btVerDetalles"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/price"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginLeft="26dp"
-                    android:layout_marginBottom="23dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/button1"
-                    android:backgroundTint="@color/bt"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
                     android:paddingTop="7dp"
                     android:paddingBottom="8dp"
                     android:text="VER DETALLES"
-                    android:textColor="@color/white"
-                    app:backgroundTint="@color/white"
-                    app:backgroundTintMode="multiply" />
+                    android:textColor="@color/white" />
 
-
-                <TextView
-                    android:id="@+id/tite2"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tite3"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginBottom="23dp"
-                    android:layout_toRightOf="@id/btVerDetalles"
-                    android:text="Por la cena... 🍕"
-                    android:textColor="#ffffff"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="32dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tite3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/price"
-                    android:layout_marginLeft="31dp"
-                    android:layout_toRightOf="@id/btVerDetalles"
-                    android:text="Mensaje"
-                    android:textColor="#ffffff"
-                    android:textSize="10sp"
-                    android:textStyle="normal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Mensaje"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Por la cena...  🍕"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
 
             </RelativeLayout>
 
@@ -124,10 +132,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
+                android:layout_marginBottom="19dp"
                 android:text="Enviar de nuevo"
                 android:textColor="#003087"
                 android:textSize="14sp"
-                android:textStyle="normal" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -238,7 +247,7 @@
                     android:text="Actividad"
                     android:textColor="#003087"
                     android:textSize="14sp"
-                    android:textStyle="normal" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -251,9 +260,7 @@
 
             </RelativeLayout>
 
-
             <RelativeLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/list_price">
@@ -390,15 +397,9 @@
                     android:textColor="#00c55b"
                     android:textSize="16sp"
                     android:textStyle="normal" />
-
             </RelativeLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="100dp" />
-
         </LinearLayout>
-
 
     </ScrollView>
 
@@ -422,11 +423,13 @@
     </androidx.cardview.widget.CardView>
 
     <View
-        android:layout_width="12dp"
-        android:layout_height="12dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/light"
-        app:layout_constraintBottom_toTopOf="@+id/btAvata"
-        app:layout_constraintStart_toEndOf="@+id/btAvata" />
+        app:layout_constraintBottom_toBottomOf="@id/btAvata"
+        app:layout_constraintLeft_toLeftOf="@id/btAvata" />
 
     <ImageView
         android:id="@+id/ImgLogo"
@@ -469,7 +472,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
 
     <TextView
         android:id="@+id/textEnviar"

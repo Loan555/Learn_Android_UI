@@ -2,9 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <size
-        android:width="325dp"
-        android:height="190dp" />
     <gradient
         android:centerColor="@color/card1"
         android:angle="-45"
